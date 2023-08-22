@@ -1,0 +1,96 @@
+.navbar-container {
+  width: 100%;
+  height: 10dvh;
+  background-color: #6a52e6;
+}
+
+.navbar-items a.active{
+  color: purple;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: #cad5e2;
+  cursor: pointer;
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: 'Ubuntu';
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-items a:hover {
+  color: rebeccapurple;
+}
+
+.navbar-items {
+  height: 10dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-item-active {
+  color: #201073;
+}
+
+.navbar-mobile-container {
+  display: none;
+}
+
+@media (max-width: 415px) {
+  .navbar-container {
+    width: 100%;
+    height: 8dvh;
+    background-color: #6a52e6;
+  }
+
+  .navbar-items {
+    display: none;
+  }
+
+  .navbar-mobile-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+  }
+
+  .navbar-mobile-container-items {
+    position: relative;
+    width: 100%;
+    height: 50dvh;
+    background-color: whitesmoke;
+  }
+
+  .mobile-navbar-items {
+    width: 100%;
+    height: 50dvh;
+    position: absolute;
+    top: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-navbar-items a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mobile-navbar-items a.active{
+    color: #201073;
+  }
+}
